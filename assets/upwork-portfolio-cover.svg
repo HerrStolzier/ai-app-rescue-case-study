@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img" aria-labelledby="title desc">
+  <title id="title">AI App Rescue Case Studies</title>
+  <desc id="desc">Portfolio cover for four verified software repair case studies.</desc>
+  <rect width="1000" height="750" fill="#08111a"/>
+  <rect x="48" y="48" width="904" height="654" rx="16" fill="#101b27" stroke="#27364a" stroke-width="2"/>
+  <text x="84" y="118" fill="#f4f7fb" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">AI App Rescue</text>
+  <text x="86" y="156" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="23">failure - diagnosis - minimal fix - verification - handover</text>
+
+  <g transform="translate(84 212)">
+    <rect width="388" height="146" rx="12" fill="#132235" stroke="#355071"/>
+    <text x="26" y="45" fill="#f4f7fb" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Next.js / Vercel</text>
+    <text x="26" y="82" fill="#c8d4e3" font-family="Arial, Helvetica, sans-serif" font-size="19">route failure rescue</text>
+    <text x="26" y="116" fill="#75e0a7" font-family="Arial, Helvetica, sans-serif" font-size="18">verified local regression</text>
+  </g>
+
+  <g transform="translate(528 212)">
+    <rect width="388" height="146" rx="12" fill="#142230" stroke="#3a5269"/>
+    <text x="26" y="45" fill="#f4f7fb" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Supabase</text>
+    <text x="26" y="82" fill="#c8d4e3" font-family="Arial, Helvetica, sans-serif" font-size="19">RLS, auth and upsert fix</text>
+    <text x="26" y="116" fill="#75e0a7" font-family="Arial, Helvetica, sans-serif" font-size="18">policy-safe test path</text>
+  </g>
+
+  <g transform="translate(84 386)">
+    <rect width="388" height="146" rx="12" fill="#172033" stroke="#46516f"/>
+    <text x="26" y="45" fill="#f4f7fb" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Python Automation</text>
+    <text x="26" y="82" fill="#c8d4e3" font-family="Arial, Helvetica, sans-serif" font-size="19">CSV/API to report workflow</text>
+    <text x="26" y="116" fill="#75e0a7" font-family="Arial, Helvetica, sans-serif" font-size="18">repeatable script tests</text>
+  </g>
+
+  <g transform="translate(528 386)">
+    <rect width="388" height="146" rx="12" fill="#152333" stroke="#465a73"/>
+    <text x="26" y="45" fill="#f4f7fb" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">AI-built App</text>
+    <text x="26" y="82" fill="#c8d4e3" font-family="Arial, Helvetica, sans-serif" font-size="19">hardening and cleanup</text>
+    <text x="26" y="116" fill="#75e0a7" font-family="Arial, Helvetica, sans-serif" font-size="18">guardrails, tests, handover</text>
+  </g>
+
+  <rect x="84" y="594" width="832" height="64" rx="10" fill="#0c1623" stroke="#253a54"/>
+  <text x="112" y="633" fill="#d8e2ef" font-family="Arial, Helvetica, sans-serif" font-size="20">github.com/HerrStolzier/ai-app-rescue-case-study</text>
+</svg>
