@@ -1,0 +1,7 @@
+order_id,customer_id,total,status
+1001,c_001,120.50,paid
+1002,c_002,80.00,paid
+1003,c_001,19.50,refunded
+1004,c_003,,paid
+1005,c_004,42.00,paid
+1006,c_002,15.25,paid

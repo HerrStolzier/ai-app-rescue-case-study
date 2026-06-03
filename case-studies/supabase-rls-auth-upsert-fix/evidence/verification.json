@@ -1,0 +1,21 @@
+{
+  "broken": {
+    "ok": false,
+    "reason": "RLS_WITH_CHECK_FAILED",
+    "row": {
+      "id": "report_before",
+      "user_id": "local_user",
+      "report_text": "North gate checked"
+    }
+  },
+  "fixed": {
+    "ok": true,
+    "row": {
+      "id": "report_after",
+      "user_id": "user_123",
+      "report_text": "North gate checked"
+    }
+  },
+  "ownerCanRead": true,
+  "otherCanRead": false
+}

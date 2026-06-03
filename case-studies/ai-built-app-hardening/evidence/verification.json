@@ -1,0 +1,23 @@
+{
+  "before": {
+    "failedAtImport": true,
+    "error": "AI_API_KEY is required"
+  },
+  "after": {
+    "invalid": {
+      "status": 400,
+      "body": {
+        "ok": false,
+        "error": "prompt is required"
+      }
+    },
+    "valid": {
+      "status": 200,
+      "body": {
+        "ok": true,
+        "providerMode": "local-demo",
+        "output": "Demo answer for: Summarize this deployment failure"
+      }
+    }
+  }
+}

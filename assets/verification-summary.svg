@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320" role="img" aria-labelledby="title desc">
+  <title id="title">Verification summary</title>
+  <desc id="desc">Four local case study verification checks passed.</desc>
+  <rect width="920" height="320" fill="#0b1117"/>
+  <rect x="32" y="32" width="856" height="256" rx="10" fill="#111923" stroke="#263241"/>
+  <text x="64" y="78" fill="#d8e2ef" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">npm run verify</text>
+  <text x="64" y="126" fill="#7ee787" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">✓ Next.js/Vercel route rescue verified</text>
+  <text x="64" y="164" fill="#7ee787" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">✓ Supabase RLS/auth/upsert demo verified</text>
+  <text x="64" y="202" fill="#7ee787" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">✓ Python report automation tests passed</text>
+  <text x="64" y="240" fill="#7ee787" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">✓ AI-built app hardening demo verified</text>
+</svg>

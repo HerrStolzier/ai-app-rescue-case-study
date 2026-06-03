@@ -1,0 +1,22 @@
+{
+  "name": "ai-app-rescue-case-study",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Public demo case studies for fixing and verifying small AI-built app failures.",
+  "scripts": {
+    "verify": "npm run verify:next && npm run verify:supabase && npm run verify:python && npm run verify:ai",
+    "verify:next": "node case-studies/nextjs-vercel-route-rescue/scripts/verify.mjs",
+    "verify:supabase": "node case-studies/supabase-rls-auth-upsert-fix/scripts/verify.mjs",
+    "verify:python": "python3 -m unittest discover -s case-studies/python-report-automation/tests",
+    "verify:ai": "node case-studies/ai-built-app-hardening/scripts/verify.mjs"
+  },
+  "dependencies": {
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}

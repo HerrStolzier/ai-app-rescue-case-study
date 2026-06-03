@@ -1,0 +1,7 @@
+node_modules/
+.next/
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+case-studies/python-report-automation/outputs/generated-summary.csv
