@@ -71,4 +71,8 @@ Not a fit:
 
 ## Publish Status
 
-This repo is prepared locally. It has not been pushed or published yet.
+Published target:
+
+```text
+https://github.com/HerrStolzier/ai-app-rescue-case-study
+```
