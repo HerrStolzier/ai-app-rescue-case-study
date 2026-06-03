@@ -74,13 +74,17 @@ const fixedBuildOutput = await runCommand(nextBin, [
   "case-studies/nextjs-vercel-route-rescue/fixed"
 ]);
 
+if (!fixedBuildOutput.includes("/api/chat")) {
+  throw new Error("Expected fixed production build output to include /api/chat");
+}
+
 const brokenResult = await withNextDev("case-studies/nextjs-vercel-route-rescue/broken", 4311, async () => {
   const response = await fetch("http://127.0.0.1:4311/api/chat");
-  const body = await response.text();
+  await response.text();
   if (response.status !== 404) {
-    throw new Error(`Expected broken route to return 404, got ${response.status}: ${body}`);
+    throw new Error(`Expected broken route to return 404, got ${response.status}`);
   }
-  return { status: response.status, body };
+  return { status: response.status };
 });
 
 const fixedResult = await withNextDev("case-studies/nextjs-vercel-route-rescue/fixed", 4312, async () => {
@@ -94,7 +98,18 @@ const fixedResult = await withNextDev("case-studies/nextjs-vercel-route-rescue/f
 
 await writeFile(
   path.join(evidenceDir, "verification.json"),
-  JSON.stringify({ fixedBuildOutput, brokenResult, fixedResult }, null, 2) + "\n"
+  JSON.stringify(
+    {
+      fixedBuild: {
+        ok: true,
+        routeVisible: fixedBuildOutput.includes("/api/chat")
+      },
+      brokenResult,
+      fixedResult
+    },
+    null,
+    2
+  ) + "\n"
 );
 
 console.log("Next.js/Vercel route rescue verified");
