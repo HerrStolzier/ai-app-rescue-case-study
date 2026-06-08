@@ -5,10 +5,11 @@
   "type": "module",
   "description": "Public demo case studies for fixing and verifying small AI-built app failures.",
   "scripts": {
-    "verify": "npm run verify:next && npm run verify:supabase && npm run verify:python && npm run verify:ai",
+    "verify": "npm run verify:next && npm run verify:supabase && npm run verify:python && npm run verify:api-sync && npm run verify:ai",
     "verify:next": "node case-studies/nextjs-vercel-route-rescue/scripts/verify.mjs",
     "verify:supabase": "node case-studies/supabase-rls-auth-upsert-fix/scripts/verify.mjs",
     "verify:python": "python3 -m unittest discover -s case-studies/python-report-automation/tests",
+    "verify:api-sync": "python3 -m unittest discover -s case-studies/api-oauth-sync-hardening/tests",
     "verify:ai": "node case-studies/ai-built-app-hardening/scripts/verify.mjs"
   },
   "dependencies": {
